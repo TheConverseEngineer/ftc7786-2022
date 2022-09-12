@@ -1,3 +1,3 @@
 ## ftc7786-2022
 
-This repository contains the public FTC code for team 7786 during the PowerPlay season.
+This repository contains the team 7786's FTC code during the PowerPlay season.
