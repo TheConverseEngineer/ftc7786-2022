@@ -1,4 +1,4 @@
-name: Android CI
+name: Gradle Blild Test
 
 on:
   push:
