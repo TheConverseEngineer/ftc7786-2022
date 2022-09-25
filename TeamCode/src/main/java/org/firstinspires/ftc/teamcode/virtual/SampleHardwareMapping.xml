@@ -1,0 +1,12 @@
+<HardwareMap>
+
+    <Motor name="leftfrontdrive" rpm="435" cpr ="383.8" />
+    <Motor name="rightfrontdrive" rpm="435" cpr ="383.8" />
+    <Motor name="leftreardrive" rpm="435" cpr ="383.8" />
+    <Motor name="rightreardrive" rpm="435" cpr ="383.8" />
+
+    <Servo name="claw" />
+
+    <CRServo name="duckSpinner" />
+
+</HardwareMap>

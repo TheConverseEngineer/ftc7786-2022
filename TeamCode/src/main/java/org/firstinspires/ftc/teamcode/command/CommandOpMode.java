@@ -7,9 +7,7 @@ import com.qualcomm.robotcore.hardware.Gamepad;
 
 import java.util.List;
 
-/** OpMode template to help simplify the creation of Command-Based code
- * TODO: add virtual hardware support
- */
+/** OpMode template to help simplify the creation of Command-Based code */
 public abstract class CommandOpMode extends LinearOpMode {
 
     /** Represents the prior state of gamepad 1 (useful for debouncing) */

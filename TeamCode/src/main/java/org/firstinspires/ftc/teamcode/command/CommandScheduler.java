@@ -45,24 +45,12 @@ public final class CommandScheduler {
         return instance;
     }
 
-    public void ScheduleCommand(Command cmd) {
-        queuedCommands.push(cmd);
-    }
-
     public void ScheduleCommand(Command... cmds) {
         for (Command i : cmds) queuedCommands.push(i);
     }
 
-    public void registerSubsystem(Subsystem sys) {
-        subsystems.add(sys);
-    }
-
     public void registerSubsystem(Subsystem... sys) {
         subsystems.addAll(Arrays.asList(sys));
-    }
-
-    public void registerTrigger(Trigger trigger) {
-        triggers.add(trigger);
     }
 
     public void registerTrigger(Trigger... trigger) {
@@ -89,6 +77,7 @@ public final class CommandScheduler {
         }
 
         for (Subsystem subsystem : subsystems) subsystem.periodic();
+
         if (this.dashboardEnabled) {
             TelemetryPacket packet = new TelemetryPacket();
             for (Subsystem subsystem: subsystems) subsystem.simPeriodic(packet);
