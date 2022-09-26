@@ -26,7 +26,7 @@ public class VirtualHardwareMapFactory {
 
 
     /** Create a hardwareMap instance mapped to virtual implementations. Requires an XML file consisting of the hardware map */
-    static HardwareMap createVirtualHardwareMap(String filename) {
+    public static HardwareMap createVirtualHardwareMap(String filename) {
         HardwareMap hardwareMap = new HardwareMap(null);
         Document mapping = createXMLDocument(filename);
 
