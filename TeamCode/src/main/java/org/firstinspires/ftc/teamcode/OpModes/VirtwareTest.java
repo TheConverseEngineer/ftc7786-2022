@@ -8,6 +8,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.virtual.VirtualHardwareMapFactory;
 
+@TeleOp(name = "virt_test")
 public class VirtwareTest extends OpMode {
     DcMotorEx motor;
     @Override
